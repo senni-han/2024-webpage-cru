@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <form action="/result" method="get">
+  <div class="container">
+    <h1 style="text-align: center;">CRU Exam</h1>
+    <p style="text-align: center;">Greeting, {{a}} ({{b}})</p>
+    <p style="text-align: center;">Please fill in this form to complete your exam.</p>
+    <hr>
+
+    <!--- <form>-->
+        <p>1. What is used to convert digital audio file to sound waves?</p>
+        <input type="radio" id="1_answer1" name="q1" value="1">
+        <label for="1_answer1">DAC (Digital to Analog Converter)</label><br>
+        <input type="radio" id="1_answer2" name="q1" value="2">
+        <label for="1_answer2">Low Pass Filter</label><br>
+        <input type="radio" id="1_answer3" name="q1" value="3">
+        <label for="1_answer3">Balanced Armature Driver</label><br>
+        <input type="radio" id="1_answer4" name="q1" value="4">
+        <label for="1_answer4">Pure Copper Cable</label><br>
+
+        <p>2. What is an equivalent focal length of 50mm lens on an APS-C sensor with 1.5x crop?</p>
+        <input type="radio" id="2_answer1" name="q2" value="1">
+        <label for="2_answer1">100mm</label><br>
+        <input type="radio" id="2_answer2" name="q2" value="2">
+        <label for="2_answer2">25mm</label><br>
+        <input type="radio" id="2_answer3" name="q2" value="3">
+        <label for="2_answer3">75mm</label><br>
+        <input type="radio" id="2_answer4" name="q2" value="4">
+        <label for="2_answer4">None of the following</label><br>
+
+        <p>3. Which one of these originated from Germany?</p>
+        <input type="radio" id="3_answer1" name="q3" value="1">
+        <label for="3_answer1">Hatsune Miku</label><br>
+        <input type="radio" id="3_answer2" name="q3" value="2">
+        <label for="3_answer2">Mercedes-Benz</label><br>
+        <input type="radio" id="3_answer3" name="q3" value="3">
+        <label for="3_answer3">Sony</label><br>
+        <input type="radio" id="3_answer4" name="q3" value="4">
+        <label for="3_answer4">Hasselblad</label><br>
+
+        <p>4. Which one of these following video games was made by Valve Coporation?</p>
+        <input type="radio" id="4_answer1" name="q4" value="1">
+        <label for="4_answer1">Project Sekai: Colorful Stage feat. Hatsune Miku</label><br>
+        <input type="radio" id="4_answer2" name="q4" value="2">
+        <label for="4_answer2">GRID Legends</label><br>
+        <input type="radio" id="4_answer3" name="q4" value="3">
+        <label for="4_answer3">Valorant</label><br>
+        <input type="radio" id="4_answer4" name="q4" value="4">
+        <label for="4_answer4">Counter-Strike 2</label><br>
+
+        <p>5. Which one of these following vehicles is a motorcycle?</p>
+        <input type="radio" id="5_answer1" name="q5" value="1">
+        <label for="5_answer1">Mercedes-Benz SLR McLaren</label><br>
+        <input type="radio" id="5_answer2" name="q5" value="2">
+        <label for="5_answer2">KTM 1290 Super Duke R</label><br>
+        <input type="radio" id="5_answer3" name="q5" value="3">
+        <label for="5_answer3">Suzuki Escudo Pike's Peak</label><br>
+        <input type="radio" id="5_answer4" name="q5" value="4">
+        <label for="5_answer4">KTM X-Bow GT-XR</label><br>
+
+        <p>6. What is a derivative of 3x^3 + x^2 - 50x?</p>
+        <input type="radio" id="6_answer1" name="q6" value="1">
+        <label for="6_answer1">3x^2 + x - 50</label><br>
+        <input type="radio" id="6_answer2" name="q6" value="2">
+        <label for="6_answer2">9x^2 + 2x - 50</label><br>
+        <input type="radio" id="6_answer3" name="q6" value="3">
+        <label for="6_answer3">3x^3 + 2x - 50</label><br>
+        <input type="radio" id="6_answer4" name="q6" value="4">
+        <label for="6_answer4">9x^3 + 2x^2 - 50x</label><br>
+
+        <p>7. What is a derivative of 2x^2 - 50?</p>
+        <input type="radio" id="7_answer1" name="q7" value="1">
+        <label for="7_answer1">4x</label><br>
+        <input type="radio" id="7_answer2" name="q7" value="2">
+        <label for="7_answer2">2x</label><br>
+        <input type="radio" id="7_answer3" name="q7" value="3">
+        <label for="7_answer3">4x - 50</label><br>
+        <input type="radio" id="7_answer4" name="q7" value="4">
+        <label for="7_answer4">2x - 50x</label><br>
+
+        <p>8. What is a probability of getting an even number when picking a counting numbers from 1 to 20?</p>
+        <input type="radio" id="8_answer1" name="q8" value="1">
+        <label for="8_answer1">1/10</label><br>
+        <input type="radio" id="8_answer2" name="q8" value="2">
+        <label for="8_answer2">1/2</label><br>
+        <input type="radio" id="8_answer3" name="q8" value="3">
+        <label for="8_answer3">2/10</label><br>
+        <input type="radio" id="8_answer4" name="q8" value="4">
+        <label for="8_answer4">2/1</label><br>
+
+        <p>9. What is cos of 120 degree?</p>
+        <input type="radio" id="9_answer1" name="q9" value="1">
+        <label for="9_answer1">1/2</label><br>
+        <input type="radio" id="9_answer2" name="q9" value="2">
+        <label for="9_answer2">(sqrt2)/(sqrt2)</label><br>
+        <input type="radio" id="9_answer3" name="q9" value="3">
+        <label for="9_answer3">(sqrt3)/2</label><br>
+        <input type="radio" id="9_answer4" name="q9" value="4">
+        <label for="9_answer4">-1/2</label><br>
+
+        <p>10. Tsukasa has a box in a shape of cube with volume of 64 centimeter cube, his girlfriend Nene has a box with double of width, 3 times the length, and half the height of Tsukasa's box. What is the volume of Nene's box?</p>
+        <input type="radio" id="10_answer1" name="q10" value="1">
+        <label for="10_answer1">192 centimeter cube</label><br>
+        <input type="radio" id="10_answer2" name="q10" value="2">
+        <label for="10_answer2">192 meter cube</label><br>
+        <input type="radio" id="10_answer3" name="q10" value="3">
+        <label for="10_answer3">84 centimeter cube</label><br>
+        <input type="radio" id="10_answer4" name="q10" value="4">
+        <label for="10_answer4">64 centimeter cube</label><br>
+
+        <p>11. What is chromatic aberration?</p>
+        <input type="radio" id="11_answer1" name="q11" value="1">
+        <label for="11_answer1">Separate rays of colored light are converged into one beam of chromatic light </label><br>
+        <input type="radio" id="11_answer2" name="q11" value="2">
+        <label for="11_answer2">Where light is split into constituent colors as it travels through a lens</label><br>
+        <input type="radio" id="11_answer3" name="q11" value="3">
+        <label for="11_answer3">Where chromatic light is split into two colors after traveling through a lens </label><br>
+        <input type="radio" id="11_answer4" name="q11" value="4">
+        <label for="11_answer4">Chromatic aberration does not affect light</label><br>
+
+        <p>12. What is the pitch of a sound determined by?</p>
+        <input type="radio" id="12_answer1" name="q12" value="1">
+        <label for="12_answer1">Its amplitude</label><br>
+        <input type="radio" id="12_answer2" name="q12" value="2">
+        <label for="12_answer2">Sound waves all have the same pitch</label><br>
+        <input type="radio" id="12_answer3" name="q12" value="3">
+        <label for="12_answer3">The medium through which it travels</label><br>
+        <input type="radio" id="12_answer4" name="q12" value="4">
+        <label for="12_answer4">Its frequency</label><br>
+
+        <p>13. What is the third law of Newton's Law of Motion?</p>
+        <input type="radio" id="13_answer1" name="q13" value="1">
+        <label for="13_answer1">F = 0</label><br>
+        <input type="radio" id="13_answer2" name="q13" value="2">
+        <label for="13_answer2">F = ma</label><br>
+        <input type="radio" id="13_answer3" name="q13" value="3">
+        <label for="13_answer3">Action = Reaction</label><br>
+        <input type="radio" id="13_answer4" name="q13" value="4">
+        <label for="13_answer4">None of the above</label><br>
+
+        <p>14. What is a unit of weight?</p>
+        <input type="radio" id="14_answer1" name="q14" value="1">
+        <label for="14_answer1">Kilogram</label><br>
+        <input type="radio" id="14_answer2" name="q14" value="2">
+        <label for="14_answer2">Liter</label><br>
+        <input type="radio" id="14_answer3" name="q14" value="3">
+        <label for="14_answer3">Meter</label><br>
+        <input type="radio" id="14_answer4" name="q14" value="4">
+        <label for="14_answer4">Hertz</label><br>
+
+        <p>15. A car travels at constant velocity of 200 km/h, in 30 minutes how many meters will the car cover?</p>
+        <input type="radio" id="15_answer1" name="q15" value="1">
+        <label for="15_answer1">100 meters</label><br>
+        <input type="radio" id="15_answer2" name="q15" value="2">
+        <label for="15_answer2">200 meters</label><br>
+        <input type="radio" id="15_answer3" name="q15" value="3">
+        <label for="15_answer3">200,000 meters</label><br>
+        <input type="radio" id="15_answer4" name="q15" value="4">
+        <label for="15_answer4">100,000 meters</label><br>
+
+        <p>16. What is the correct way to write Hello World in Rust (as in, Rust language)?</p>
+        <input type="radio" id="16_answer1" name="q16" value="1">
+        <label for="16_answer1">print("Hello World!")</label><br>
+        <input type="radio" id="16_answer2" name="q16" value="2">
+        <label for="16_answer2">console.log("Hello world!")</label><br>
+        <input type="radio" id="16_answer3" name="q16" value="3">
+        <label for="16_answer3">fn main() {println!("Hello World!");}</label><br>
+        <input type="radio" id="16_answer4" name="q16" value="4">
+        <label for="16_answer4">#!/bin/bash echo "Hello World!"</label><br>
+
+        <p>17. Which one of these isn't like the other?</p>
+        <input type="radio" id="17_answer1" name="q17" value="1">
+        <label for="17_answer1">Python</label><br>
+        <input type="radio" id="17_answer2" name="q17" value="2">
+        <label for="17_answer2">HTML</label><br>
+        <input type="radio" id="17_answer3" name="q17" value="3">
+        <label for="17_answer3">Godot</label><br>
+        <input type="radio" id="17_answer4" name="q17" value="4">
+        <label for="17_answer4">C</label><br>
+
+        <p>18. Which one of these following operating system isn't a Unix-like system?</p>
+        <input type="radio" id="18_answer1" name="q18" value="1">
+        <label for="18_answer1">Ubuntu</label><br>
+        <input type="radio" id="18_answer2" name="q18" value="2">
+        <label for="18_answer2">macOS</label><br>
+        <input type="radio" id="18_answer3" name="q18" value="3">
+        <label for="18_answer3">Fedora</label><br>
+        <input type="radio" id="18_answer4" name="q18" value="4">
+        <label for="18_answer4">Windows</label><br>
+
+        <p>19. Who invented Linux Kernel?</p>
+        <input type="radio" id="19_answer1" name="q19" value="1">
+        <label for="19_answer1">Steve Jobs</label><br>
+        <input type="radio" id="19_answer2" name="q19" value="2">
+        <label for="19_answer2">Alan Turing</label><br>
+        <input type="radio" id="19_answer3" name="q19" value="3">
+        <label for="19_answer3">Linus Torvalds</label><br>
+        <input type="radio" id="19_answer4" name="q19" value="4">
+        <label for="19_answer4">Emu Ootori</label><br>
+
+        <p>20. What is a low-level programming language?</p>
+        <input type="radio" id="20_answer1" name="q20" value="1">
+        <label for="20_answer1">Python</label><br>
+        <input type="radio" id="20_answer2" name="q20" value="2">
+        <label for="20_answer2">Assembly</label><br>
+        <input type="radio" id="20_answer3" name="q20" value="3">
+        <label for="20_answer3">JavaScript</label><br>
+        <input type="radio" id="20_answer4" name="q20" value="4">
+        <label for="20_answer4">Java</label><br>
+
+        <p><b>Bonus question! These questions will not affect your score, it was made for fun.</b></p>
+        <p>B1. Which camera brands hasn't sold a mirrorless interchangable lens camera?</p>
+        <input type="radio" id="B1_answer1" name="qb1" value="1">
+        <label for="B1_answer1">Canon</label><br>
+        <input type="radio" id="B1_answer2" name="qb1" value="2">
+        <label for="B1_answer2">Pentax</label><br>
+        <input type="radio" id="B1_answer3" name="qb1" value="3">
+        <label for="B1_answer3">Leica</label><br>
+        <input type="radio" id="B1_answer4" name="qb1" value="4">
+        <label for="B1_answer4">Sony</label><br>
+
+        <p>B2. Which character is made by Crypton Future Media?</p>
+        <input type="radio" id="B2_answer1" name="qb2" value="1">
+        <label for="B2_answer1">flower</label><br>
+        <input type="radio" id="B2_answer2" name="qb2" value="2">
+        <label for="B2_answer2">Hatsune Miku</label><br>
+        <input type="radio" id="B2_answer3" name="qb2" value="3">
+        <label for="B2_answer3">Gumi</label><br>
+        <input type="radio" id="B2_answer4" name="qb2" value="4">
+        <label for="B2_answer4">Kasane Teto</label><br>
+
+        <p>B3. Are you alive?</p>
+        <input type="radio" id="B3_answer1" name="qb3" value="1">
+        <label for="B3_answer1">Yes, I am alive and well.</label><br>
+        <input type="radio" id="B3_answer2" name="qb3" value="2">
+        <label for="B3_answer2">Yes, I am alive, but not well.</label><br>
+        <input type="radio" id="B3_answer3" name="qb3" value="3">
+        <label for="B3_answer3">No, I am NOT alive.</label><br>
+        <input type="radio" id="B3_answer4" name="qb3" value="4">
+        <label for="B3_answer4">I am not sure.</label><br>
+
+        <p>B4. What laptop serie is known for having matte black interior, red pointing stick in the middle of keyboard, and its durability and reliability that makes it the industry standard for business laptop for more than 30 years?</p>
+        <input type="radio" id="B4_answer1" name="qb4" value="1">
+        <label for="B4_answer1">IBM/Lenovo ThinkPad</label><br>
+        <input type="radio" id="B4_answer2" name="qb4" value="2">
+        <label for="B4_answer2">Apple MacBook</label><br>
+        <input type="radio" id="B4_answer3" name="qb4" value="3">
+        <label for="B4_answer3">Dell XPS</label><br>
+        <input type="radio" id="B4_answer4" name="qb4" value="4">
+        <label for="B4_answer4">Lenovo Legion</label><br>
+
+        <p>B5. Are you enjoying this exam, precisely hand-crafted and mastered by the one and only Han Senni, so far?</p>
+        <input type="radio" id="B5_answer1" name="qb5" value="1">
+        <label for="B5_answer1">Yes, thank you Han Senni.</label><br>
+        <input type="radio" id="B5_answer2" name="qb5" value="2">
+        <label for="B5_answer2">No, screw you Han Senni.</label><br>
+        <input type="radio" id="B5_answer3" name="qb5" value="3">
+        <label for="B5_answer3">Maybe...</label><br>
+        <input type="radio" id="B5_answer4" name="qb5" value="4">
+        <label for="B5_answer4">I prefer an exam made by Tsukasa Tenma and his peers.</label><br>
+    <!--- </form>-->
+
+    <button type="submit" class="registerbtn">Submit</button>
+  </div>
+  </form>
+
+</body>
+</html>

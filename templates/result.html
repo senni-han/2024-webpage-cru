@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="container">
+  </br>
+    <p align="center">
+        <img src="https://www.cru.ac.th/images/crulogo.png" alt="CRULogo" width="30%"/>
+    </p>
+    <h1 style="text-align: center;">CRU Exam - Result</h1></br>
+    <h2 style="text-align: center;">You got... {{scoretotal}}</h2></br>
+
+    <button type="submit" class="registerbtn" onclick="location.href='/';">Redo exam</button>
+  </div>
+
+</body>
+</html>
