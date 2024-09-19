@@ -1,7 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
 <body>
-  <a href="/page1">Beam</a>
-  <a href="/page2">Nine</a>
-  <a href="/page3">Bonus</a>
-  <a href="/page4">Kim</a>
-  <a href="/page5">Gun</a>
+<form action="/test" method="get">    
+  <div class="container">
+  </br>
+    <p align="center">
+        <img src="https://www.cru.ac.th/images/crulogo.png" alt="CRULogo" width="30%"/>
+    </p>
+    <h1 style="text-align: center;">CRU Exam - Register</h1>
+    <p style="text-align: center;">Please fill in this form to log into the exam.</p>
+    <hr>
+
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" name="name" id="name" required>
+
+    <label for="studentnumber"><b>Student Number</b></label>
+    <input type="text" placeholder="Enter Student Number" name="studentnumber" id="studentnumber" required>
+
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+    <hr>
+
+    <button type="submit" class="registerbtn">Log in</button>
+  </div>
+</form>
+
 </body>
+</html>
